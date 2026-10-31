@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="data:,">
+<title>하이소사이어티 — 신뢰를 쌓아, 구매로 잇습니다</title>
+<meta name="description" content="브랜딩이란, 알게 하고 좋아하게 하고 믿게 만드는 예술이다. 바이럴 마케팅, SNS 마케팅, 온라인 뉴스.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function (d) {
+    d.documentElement.classList.add('js');
+    setTimeout(function () { if (!window.__hsReady) d.documentElement.classList.remove('js'); }, 2500);
+  })(document);
+</script>
+<script src="js/main.js" defer></script>
+<script src="js/halftone.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#services">본문 바로가기</a>
+
+<header class="hd" id="hd">
+  <div class="hd-in">
+    <a class="hd-logo" href="#top" aria-label="하이소사이어티 처음으로"><img src="../assets/logo/logo-dark.png" alt="HIGH SOCIETY" width="813" height="213"></a>
+    <nav class="hd-nav" aria-label="주 메뉴">
+      <a href="#about" data-nav="about">회사소개</a>
+      <a href="#services" data-nav="services">서비스</a>
+      <a href="#portfolio" data-nav="portfolio">포트폴리오</a>
+      <a href="#contact" data-nav="contact">문의</a>
+      <span class="hd-bar" aria-hidden="true"></span>
+    </nav>
+    <a class="btn btn-fill hd-call" href="tel:01031342918"><span class="roll" data-t="010.3134.2918">010.3134.2918</span></a>
+    <button class="hd-menu" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="sheet">
+      <svg class="i-m" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg><svg class="i-x" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" hidden>
+  <nav class="sheet-nav" aria-label="전체 메뉴">
+    <a href="#about">회사소개</a>
+    <a href="#services">서비스</a>
+    <a href="#portfolio">포트폴리오</a>
+    <a href="#contact">문의</a>
+  </nav>
+  <div class="sheet-foot">
+    <a class="btn btn-fill" href="tel:01031342918"><span class="roll" data-t="전화 010.3134.2918">전화 010.3134.2918</span></a>
+    <a class="sheet-mail" href="mailto:hi.lee@high-society.co.kr">hi.lee@high-society.co.kr</a>
+  </div>
+</div>
+
+<div class="tint" id="tint" aria-hidden="true"></div>
+
+<main id="main">
+
+<!-- 첫 화면 -->
+<section class="hero" id="top" aria-label="첫 화면">
+  <div class="hero-copy">
+    <h1 class="hero-t"><span class="ln"><span>신뢰를 쌓아,</span></span><span class="ln"><span>구매로 잇습니다.</span></span></h1>
+    <p class="hero-sub rv">단순히 제품만을 판매하기 위한 목적이 아닌, 브랜드와 잠재고객 간의 신뢰관계를 구축하고 신뢰도를 높여 구매활동을 일으키는 결과적인 마케팅을 추구합니다.</p>
+    <div class="hero-btns rv">
+      <a class="btn btn-fill" href="#contact"><span class="roll" data-t="문의하기">문의하기</span></a>
+      <a class="btn btn-line" href="tel:01031342918"><span class="roll" data-t="전화 010.3134.2918">전화 010.3134.2918</span></a>
+    </div>
+    <ul class="quick rv" aria-label="서비스 바로가기">
+      <li><a href="#services" data-tab-go="viral"><b>바이럴 마케팅</b><span>블로그 / 지식IN / 카페 / 포스트</span></a></li>
+      <li><a href="#services" data-tab-go="sns"><b>SNS 마케팅</b><span>#인스타그램체험단 #인플루언서</span></a></li>
+      <li><a href="#services" data-tab-go="news"><b>온라인 뉴스</b><span>#언론보도 #브랜드 #프로모션</span></a></li>
+    </ul>
+  </div>
+  <figure class="hero-art" id="heroArt">
+    <img class="hero-img" src="img/hero.jpg" alt="책상 위에 놓인 신문, 휴대폰, 초록 노트, 커피잔을 위에서 찍은 사진" width="1440" height="1788" fetchpriority="high">
+    <canvas class="hero-cv" id="heroCv" aria-hidden="true"></canvas>
+    <figcaption class="hero-cap"><span id="dotCount">망점</span><span class="hero-hint">손을 올리면 사진이 드러납니다</span></figcaption>
+  </figure>
+</section>
+
+<!-- 회사소개 -->
+<section class="about" id="about" aria-labelledby="about-t">
+  <div class="wrap">
+    <h2 class="sr" id="about-t">회사소개</h2>
+    <p class="quote" id="quote">브랜딩이란, 알게 하고 좋아하게 하고 믿게 만드는 예술이다.</p>
+    <div class="about-grid">
+      <p class="about-lead rv">성공을 이끄는 1%의 집단, 하이소사이어티는 바이럴 마케팅, SNS 마케팅, 온라인 뉴스로 브랜드를 알리는 온라인 마케팅 대행사입니다.</p>
+      <ul class="facts" data-stagger>
+        <li><a href="#services"><b>3가지</b><span>서비스</span></a></li>
+        <li><a href="#types"><b>6가지</b><span>광고 종류</span></a></li>
+        <li><a href="#services" data-tab-go="viral"><b>4가지</b><span>바이럴 채널</span></a></li>
+        <li><a href="#clients"><b>18곳</b><span>함께한 고객사</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 서비스 고르기 -->
+<section class="svc" id="services" aria-labelledby="svc-t">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-t" id="svc-t"><span class="ln"><span>필요한 서비스를</span></span><span class="ln"><span>골라 보세요</span></span></h2>
+    </div>
+    <div class="tabs" role="tablist" aria-label="서비스">
+      <button class="tab" role="tab" id="tab-viral" aria-controls="pn-viral" aria-selected="true" data-tab="viral">바이럴 마케팅</button>
+      <button class="tab" role="tab" id="tab-sns" aria-controls="pn-sns" aria-selected="false" tabindex="-1" data-tab="sns">SNS 마케팅</button>
+      <button class="tab" role="tab" id="tab-news" aria-controls="pn-news" aria-selected="false" tabindex="-1" data-tab="news">온라인 뉴스</button>
+      <span class="tab-bar" aria-hidden="true"></span>
+    </div>
+
+    <div class="panels">
+      <!-- 바이럴 -->
+      <div class="panel is-on" role="tabpanel" id="pn-viral" aria-labelledby="tab-viral" data-panel="viral">
+        <div class="pn-text">
+          <p class="pn-desc">블로그 / 지식IN / 카페 / 포스트, 상위노출과 배포 등 다양한 마케팅 기법을 통해 신뢰도 있는 정보를 전달합니다.</p>
+          <p class="tags">#블로그체험단 #맛집 #체험 #프렌차이즈 #바이럴마케팅</p>
+          <h3 class="pn-sub">바이럴 채널 4가지</h3>
+          <ul class="rows" data-swap>
+            <li><button type="button" data-img="img/ch-blog.jpg" data-alt="블로그 상위노출 집행 화면"><b>블로그 상위노출</b><span>PC 검색영역 / 모바일 검색영역 상 컨텐츠를 통해, 높은 순위로 신뢰도 있는 정보를 효율적으로 전달</span></button></li>
+            <li><button type="button" data-img="img/ch-kin.jpg" data-alt="지식IN 집행 화면"><b>지식IN</b><span>글로써만 홍보하는 방식으로, 신뢰도 있고 믿을 수 있게 고객들에게 다가갈 수 있는 방법</span></button></li>
+            <li><button type="button" data-img="img/ch-cafe.jpg" data-alt="카페 상위노출 집행 화면"><b>카페 상위노출</b><span>카페 커뮤니티 채널을 활용하여 블로그 보다 조금 더 쉽고 빠르게 다가갈 수 있는 상위노출</span></button></li>
+            <li><button type="button" data-img="img/ch-post.jpg" data-alt="인플루언서 포스트 집행 화면"><b>인플루언서 포스트</b><span>블로그 상위노출보다 노출 키워드를 더 다양하게 삽입 가능하고 상위노출 시 블로그보다 장기유지 가능</span></button></li>
+          </ul>
+        </div>
+        <div class="pn-media">
+          <div class="frame"><img src="img/c-viral.jpg" data-base="img/c-viral.jpg" data-base-alt="블로그, 지식IN, 카페, 포스트 집행 화면" alt="블로그, 지식IN, 카페, 포스트 집행 화면" width="1200" height="1013" loading="lazy"></div>
+          <p class="frame-cap">실제 집행 화면 <span class="frame-now">블로그 / 지식IN / 카페 / 포스트</span></p>
+        </div>
+      </div>
+
+      <!-- SNS -->
+      <div class="panel" role="tabpanel" id="pn-sns" aria-labelledby="tab-sns" data-panel="sns" hidden>
+        <div class="pn-text">
+          <p class="pn-desc">SNS마케팅, 2030 젊은 세대들이 애용하는 소셜 네트워크 서비스를 통해 친근감있게 다가갈 수 있습니다.</p>
+          <p class="tags">#인스타그램체험단 #인플루언서 #체험단 #홍보</p>
+          <h3 class="pn-sub">진행 4단계</h3>
+          <ol class="rows steps">
+            <li><div><b><i>1</i>인플루언서 섭외</b><span>브랜드 조건에 적합한 플랫폼에서 활동하는 인플루언서 섭외</span></div></li>
+            <li><div><b><i>2</i>콘텐츠 기획</b><span>키워드, 이미지, 해시태그 등 홍보 효과가 높은 콘텐츠 기획</span></div></li>
+            <li><div><b><i>3</i>SNS 배포</b><span>직관적이고 자연스러운 콘텐츠를 다수의 이용자에게 노출</span></div></li>
+            <li><div><b><i>4</i>콘텐츠 모니터링 및 여론확인</b><span>좋아요, 댓글, DM 등을 통한 소비자와의 커뮤니케이션 및 피드백 가능</span></div></li>
+          </ol>
+        </div>
+        <div class="pn-media">
+          <div class="frame"><img src="img/c-sns-headspa.jpg" alt="헤드스파7 인스타그램 체험단 집행 화면" width="1200" height="922" loading="lazy"></div>
+          <p class="frame-cap">실제 집행 화면 <span class="frame-now">#인스타그램체험단 #인플루언서 #SNS체험단</span></p>
+        </div>
+      </div>
+
+      <!-- 언론 -->
+      <div class="panel" role="tabpanel" id="pn-news" aria-labelledby="tab-news" data-panel="news" hidden>
+        <div class="pn-text">
+          <p class="pn-desc">다양한 언론사를 통해 신뢰도 있고, 공신력있는 정보를 전달합니다. 기업 또는 상품 홍보용으로 추천드립니다.</p>
+          <p class="tags">#언론보도 #브랜드 #프로모션 #이벤트 #신제품출시</p>
+          <h3 class="pn-sub">진행 4단계</h3>
+          <ol class="rows steps">
+            <li><div><b><i>1</i>콘텐츠 기획</b><span>각종 이벤트/신제품 등 콘텐츠 기획</span></div></li>
+            <li><div><b><i>2</i>언론사 섭외</b><span>다양한 언론사를 섭외하여 긴밀한 연계를 통해 콘텐츠 배포</span></div></li>
+            <li><div><b><i>3</i>콘텐츠 제작/컨펌 후 송출</b><span>공신력있는 언론매체를 통해 다수의 이용자에게 포털 노출</span></div></li>
+            <li><div><b><i>4</i>노출현황 체크 및 보고</b><span>언론보도를 통해 이벤트/신제품 등 홍보 후 결과체크</span></div></li>
+          </ol>
+        </div>
+        <div class="pn-media">
+          <div class="frame"><img src="img/c-news-kaping.jpg" alt="카핑 프리미엄 제주 봉개꿀 신제품 출시 기사 화면" width="1200" height="1024" loading="lazy"></div>
+          <p class="frame-cap">실제 집행 화면 <span class="frame-now">'카핑 프리미엄 제주 봉개꿀'신제품 출시</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 광고 종류 · 하는 일 -->
+<section class="more" id="types" aria-labelledby="more-t">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-t" id="more-t"><span class="ln"><span>광고 종류 6가지와</span></span><span class="ln"><span>하이소사이어티가 하는 일</span></span></h2>
+      <p class="sec-lead rv">이름을 누르면 설명이 펼쳐집니다.</p>
+    </div>
+    <div class="more-grid">
+      <div class="acc-col">
+        <h3 class="acc-h">광고 종류</h3>
+        <ul class="acc" data-stagger>
+          <li><button type="button" aria-expanded="false"><b>바이럴 마케팅</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>블로그 / 카페 / 지식인 / 체험단 / 언론보도 등 각종 채널을 통해 소비자들에게 빠르게 확산 시키는 마케팅</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>모바일 광고</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>키워드 검색으로 상품 광고 or 모바일배너광고 등으로 다양한 상품정보를 모바일 영역에서 노출되는 마케팅</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>SNS 광고</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>떠오르는 소셜네트워크서비스(SNS)를 사용함으로써 소비자들로 하여금 조금 더 가깝게 느껴질 수 있도록 하는 마케팅</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>검색광고</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>사이트 이용자가 특정 단어를 검색했을때, 지정 된 자리에 링크 or 이미지를 노출 시켜주는 광고</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>디스플레이 광고</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>네트워크 or 동영상 광고로 광고주의 업종에 맞는 디스플레이 광고 매체를 선별하는 마케팅</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>유튜브 광고</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>세계 최고의 온라인 동영상 플랫폼으로 다양한 컨셉의 동영상 광고 마케팅</p></div></li>
+        </ul>
+      </div>
+      <div class="acc-col">
+        <h3 class="acc-h">하는 일</h3>
+        <ul class="acc" data-stagger>
+          <li><button type="button" aria-expanded="false"><b>바이럴 키워드</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>블로그 운영/키워드 노출 등 SNS관리 / 확산</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>언론 홍보</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>보도기사 등록/자료배포 다양한 언론사와 긴밀한 연계를 통한 포털 노출</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>온라인 위기관리</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>블랙 컨슈머 콘텐츠관리/신뢰도 하락 원인인 부정적 콘텐츠 관리로 결과 페이지 클렌징 진행</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>체험단 서포터즈</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>체험/후기/정보성 포스팅 등록/ 파워블로그 연계 및 워드마케팅의 직접소통을 통한 광고주의 Needs 반영</p></div></li>
+          <li><button type="button" aria-expanded="false"><b>마케팅 MIX 제안</b><i class="pm" aria-hidden="true"></i></button><div class="acc-b"><p>종합바이럴(IMC)/모바일광고 최적화 검색광고를 통한 최적화 제안을 통해 극대화 된 효율 보장</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 비포 애프터 -->
+<section class="ba" id="before-after" aria-labelledby="ba-t">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-t" id="ba-t"><span class="ln"><span>마케팅 진행 전과 후,</span></span><span class="ln"><span>이렇게 바뀝니다</span></span></h2>
+    </div>
+    <div class="ba-head" aria-hidden="true"><span>마케팅 진행 전</span><span>마케팅 진행 후</span></div>
+    <ul class="ba-list" id="baList">
+      <li><p class="b4"><span class="lbl">진행 전</span><s>대표키워드 3~4개만 집중</s></p><p class="af"><span class="lbl">진행 후</span>세부키워드 및 커뮤니케이션 키워드 재설정</p></li>
+      <li><p class="b4"><span class="lbl">진행 전</span><s>유저 패턴을 고려하지 않은 노출 매체</s></p><p class="af"><span class="lbl">진행 후</span>매체확정 (블로그 / 카페 / 지식인 / 언론보도 등)</p></li>
+      <li><p class="b4"><span class="lbl">진행 전</span><s>랜딩페이지의 잘못 된 설정</s></p><p class="af"><span class="lbl">진행 후</span>이벤트 페이지의 다양한 랜딩 설정</p></li>
+      <li><p class="b4"><span class="lbl">진행 전</span><s>홈페이지 이미지 / 검색 이미지 무단도용</s></p><p class="af"><span class="lbl">진행 후</span>직접 촬영 후 보정 이미지</p></li>
+      <li><p class="b4"><span class="lbl">진행 전</span><s>일반검색 정보형의 경직 된 문체 사용</s></p><p class="af"><span class="lbl">진행 후</span>정보수집 / 체험/ 기획형의 상품에 맞는 연령 화자 설정</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 실제 사례 -->
+<section class="cases" id="portfolio" aria-labelledby="cases-t">
+  <div class="wrap">
+    <div class="sec-head sec-head-row">
+      <h2 class="sec-t" id="cases-t"><span class="ln"><span>실제로 집행한 화면</span></span></h2>
+      <div class="car-ctl">
+        <button class="car-btn" type="button" data-car="-1" aria-label="이전 사례"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M14.5 6l-6 6 6 6"/></svg></button>
+        <button class="car-btn" type="button" data-car="1" aria-label="다음 사례"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9.5 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="car" id="car" tabindex="0" aria-label="집행 사례 목록, 옆으로 넘겨 보세요">
+    <ul class="car-track" data-stagger>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/marketing-01.jpg"><span class="card-img"><img src="img/c-viral.jpg" alt="블로그, 지식IN, 카페, 포스트 집행 화면" loading="lazy" width="1200" height="1013"></span><span class="card-kind">바이럴</span><span class="card-t">블로그 / 지식IN / 카페 / 포스트</span><span class="card-tags">#블로그체험단 #맛집 #체험 #프렌차이즈 #바이럴마케팅</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/sns-03.jpg"><span class="card-img"><img src="img/c-sns-isaac.jpg" alt="이삭토스트 인스타그램 체험단 화면" loading="lazy" width="470" height="520"></span><span class="card-kind">SNS</span><span class="card-t">#이삭토스트 #맛집 #체험단</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/sns-03.jpg"><span class="card-img"><img src="img/c-sns-momei.jpg" alt="모메이 립틴트 인스타그램 화면" loading="lazy" width="470" height="520"></span><span class="card-kind">SNS</span><span class="card-t">#모메이 #뷰티 #립틴트</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/sns-03.jpg"><span class="card-img"><img src="img/c-sns-headspa7.jpg" alt="헤드스파7 노워시샴푸 인스타그램 화면" loading="lazy" width="470" height="520"></span><span class="card-kind">SNS</span><span class="card-t">#헤드스파7 #노워시샴푸 #물없이감는샴푸</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/news-01.jpg"><span class="card-img"><img src="img/c-news-kaping.jpg" alt="카핑 프리미엄 제주 봉개꿀 기사 화면" loading="lazy" width="1200" height="1024"></span><span class="card-kind">언론</span><span class="card-t">카핑 프리미엄 제주 봉개꿀,신제품 출시 이벤트…최대 23%할인</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/news-03.jpg"><span class="card-img"><img src="img/c-news-festa.jpg" alt="제주 애월 축제 기사 화면" loading="lazy" width="760" height="600"></span><span class="card-kind">언론</span><span class="card-t">제주 애월 11월 축제 2019 애월愛봉봉페스타</span><span class="card-tags">#문화 #축제 #드라마촬영지</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/news-03.jpg"><span class="card-img"><img src="img/c-news-hotel.jpg" alt="제주도호텔 스카이브로 기사 화면" loading="lazy" width="560" height="600"></span><span class="card-kind">언론</span><span class="card-t">연애의맛 '보고커플' 방문 제주도호텔 스카이브로 커플 이벤트 진행</span><span class="card-tags">#여행 #호텔 #호캉스 #이벤트</span></button></li>
+      <li class="card"><button type="button" class="card-btn" data-full="../assets/cases/news-04.jpg"><span class="card-img"><img src="img/c-news-health.jpg" alt="건강기능식품 신제품 기사 화면" loading="lazy" width="1200" height="564"></span><span class="card-kind">언론</span><span class="card-t">#건강기능식품 #신제품 #이벤트</span></button></li>
+    </ul>
+  </div>
+  <span class="peek" id="peek" aria-hidden="true">크게 보기</span>
+</section>
+
+<!-- 고객사 -->
+<section class="clients" id="clients" aria-labelledby="cl-t">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="sec-t" id="cl-t"><span class="ln"><span>함께한 고객사 18곳</span></span></h2>
+    </div>
+    <ul class="logos" data-stagger>
+      <li><img src="../assets/clients/01-siwonschool.png" alt="시원스쿨" loading="lazy" width="350" height="175"><span>시원스쿨</span></li>
+      <li><img src="../assets/clients/02-ankukhealth.png" alt="안국건강" loading="lazy" width="350" height="175"><span>안국건강</span></li>
+      <li><img src="../assets/clients/03-headspa7.png" alt="헤드스파7" loading="lazy" width="350" height="175"><span>헤드스파7</span></li>
+      <li><img src="../assets/clients/04-duo.png" alt="듀오" loading="lazy" width="350" height="175"><span>듀오</span></li>
+      <li><img src="../assets/clients/05-wisecamp.png" alt="와이즈캠프" loading="lazy" width="350" height="175"><span>와이즈캠프</span></li>
+      <li><img src="../assets/clients/06-visangedu.png" alt="비상에듀" loading="lazy" width="350" height="175"><span>비상에듀</span></li>
+      <li><img src="../assets/clients/07-seoulmedicare.png" alt="서울메디케어" loading="lazy" width="350" height="175"><span>서울메디케어</span></li>
+      <li><img src="../assets/clients/08-eutteum50.png" alt="으뜸50안경" loading="lazy" width="350" height="175"><span>으뜸50안경</span></li>
+      <li><img src="../assets/clients/09-yupdduk.png" alt="엽기떡볶이" loading="lazy" width="350" height="175"><span>엽기떡볶이</span></li>
+      <li><img src="../assets/clients/10-pontus.png" alt="폰터스" loading="lazy" width="350" height="175"><span>폰터스</span></li>
+      <li><img src="../assets/clients/11-ponew.png" alt="포뉴" loading="lazy" width="350" height="175"><span>포뉴</span></li>
+      <li><img src="../assets/clients/12-lottejtb.png" alt="롯데JTB" loading="lazy" width="350" height="175"><span>롯데JTB</span></li>
+      <li><img src="../assets/clients/13-sixoclockoven.png" alt="여섯시오븐" loading="lazy" width="350" height="175"><span>여섯시오븐</span></li>
+      <li><img src="../assets/clients/14-ecothemepark-daegusup.png" alt="에코테마파크 대구숲" loading="lazy" width="350" height="175"><span>에코테마파크 대구숲</span></li>
+      <li><img src="../assets/clients/15-seoularts.png" alt="서울예술대학교" loading="lazy" width="350" height="175"><span>서울예술대학교</span></li>
+      <li><img src="../assets/clients/16-boribori.png" alt="보리보리" loading="lazy" width="350" height="175"><span>보리보리</span></li>
+      <li><img src="../assets/clients/17-lashevan.png" alt="라쉬반" loading="lazy" width="350" height="175"><span>라쉬반</span></li>
+      <li><img src="../assets/clients/18-nsu.png" alt="남서울대학교" loading="lazy" width="350" height="175"><span>남서울대학교</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 문의 -->
+<section class="contact" id="contact" aria-labelledby="ct-t">
+  <div class="wrap ct-grid">
+    <div class="ct-side">
+      <h2 class="sec-t" id="ct-t"><span class="ln"><span>문의하기</span></span></h2>
+      <p class="sec-lead rv">관심 있는 서비스를 고르고 내용을 남겨 주세요. 전화나 메일로 바로 연락하셔도 됩니다.</p>
+      <dl class="ct-info rv">
+        <div><dt>전화</dt><dd><a href="tel:01031342918">010.3134.2918</a></dd></div>
+        <div><dt>메일</dt><dd><a href="mailto:hi.lee@high-society.co.kr">hi.lee@high-society.co.kr</a></dd></div>
+        <div><dt>주소</dt><dd>서울특별시 광진구 천호대로 536, 서림빌딩 6층</dd></div>
+      </dl>
+    </div>
+    <form class="form" id="form" novalidate>
+      <fieldset class="chips">
+        <legend>관심 서비스 <small>여러 개 고를 수 있어요</small></legend>
+        <label><input type="checkbox" name="svc" value="바이럴"><span>바이럴</span></label>
+        <label><input type="checkbox" name="svc" value="SNS"><span>SNS</span></label>
+        <label><input type="checkbox" name="svc" value="언론"><span>언론</span></label>
+        <label><input type="checkbox" name="svc" value="기타"><span>기타</span></label>
+      </fieldset>
+      <div class="f-row">
+        <label class="fld"><span>이름</span><input type="text" name="name" autocomplete="name" required></label>
+        <label class="fld"><span>연락처</span><input type="tel" name="phone" autocomplete="tel" inputmode="tel" required></label>
+      </div>
+      <label class="fld"><span>이메일</span><input type="email" name="email" autocomplete="email"></label>
+      <label class="fld"><span>문의 내용</span><textarea name="msg" rows="4" required></textarea></label>
+      <div class="agree">
+        <label class="chk"><input type="checkbox" name="agree" required><span>개인정보 수집·이용에 동의합니다 (필수)</span></label>
+        <details><summary>내용 보기</summary><p>수집 항목: 이름, 연락처, 이메일, 문의 내용. 이용 목적: 문의 답변. 보관 기간: 답변 완료 후 지체 없이 파기.</p></details>
+      </div>
+      <p class="f-err" id="fErr" role="alert"></p>
+      <button class="btn btn-fill btn-wide" type="submit"><span class="roll" data-t="보내기">보내기</span></button>
+      <div class="f-done" id="fDone" hidden tabindex="-1">
+        <p class="f-done-t">접수되었습니다.</p>
+        <p>시안 화면이라 실제로 전송되지는 않았습니다. 급한 문의는 <a href="tel:01031342918">010.3134.2918</a>로 전화 주세요.</p>
+        <button type="button" class="btn btn-line" id="fAgain"><span class="roll" data-t="다시 쓰기">다시 쓰기</span></button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap ft-in">
+    <img class="ft-logo" src="../assets/logo/logo-dark.png" alt="HIGH SOCIETY" width="813" height="213" loading="lazy">
+    <div class="ft-info">
+      <p class="ft-name">하이소사이어티</p>
+      <p><span>MOBILE</span> <a href="tel:01031342918">010.3134.2918</a></p>
+      <p><span>E-MAIL</span> <a href="mailto:hi.lee@high-society.co.kr">hi.lee@high-society.co.kr</a></p>
+      <p><span>ADDRESS</span> 서울특별시 광진구 천호대로 536, 서림빌딩 6층</p>
+    </div>
+    <p class="ft-copy">© HIGH-SOCIETY. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<nav class="appbar" id="appbar" aria-label="빠른 메뉴">
+  <a href="#top" data-ab="top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10.5L12 4l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5.5h-5V20H5a1 1 0 0 1-1-1z"/></svg><span>홈</span></a>
+  <a href="#services" data-ab="services"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></svg><span>서비스</span></a>
+  <a href="#portfolio" data-ab="portfolio"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="14" rx="1.5"/><path d="M3.5 15.5l4.5-4 4 3.5 3-2.5 5.5 4.5"/><circle cx="15.5" cy="9" r="1.5"/></svg><span>사례</span></a>
+  <a href="#contact" data-ab="contact"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A1.5 1.5 0 0 1 5.5 5h13A1.5 1.5 0 0 1 20 6.5v9a1.5 1.5 0 0 1-1.5 1.5H10l-4.5 3.5V17H5.5A1.5 1.5 0 0 1 4 15.5z"/></svg><span>문의</span></a>
+  <a href="tel:01031342918" class="ab-call"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.2 4.5l2 4.2-1.9 1.6a10.5 10.5 0 0 0 5.4 5.4l1.6-1.9 4.2 2-.6 3a1.5 1.5 0 0 1-1.6 1.2A15.5 15.5 0 0 1 3.9 6.7a1.5 1.5 0 0 1 1.2-1.6z"/></svg><span>전화</span></a>
+  <span class="ab-bar" aria-hidden="true"></span>
+</nav>
+
+<dialog class="lb" id="lb" aria-label="사례 크게 보기">
+  <img id="lbImg" src="" alt="">
+  <button type="button" class="lb-x" id="lbX" aria-label="닫기"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</dialog>
+
+</body>
+</html>

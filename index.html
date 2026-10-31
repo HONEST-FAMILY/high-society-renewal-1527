@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>하이소사이어티 · 홈페이지 메인 시안 3안</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root{--ink:#111;--sub:#555;--line:#e4e4e4;--soft:#f5f5f4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Pretendard Variable",Pretendard,"Noto Sans KR","Malgun Gothic",sans-serif;color:var(--ink);background:#fff;line-height:1.6;word-break:keep-all;overflow-wrap:break-word}
+a{color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{padding:40px 0 32px;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:18px}
+.brand img{height:34px;width:auto}
+.brand p{font-size:14px;color:var(--sub);line-height:1.5}
+h1{font-size:clamp(30px,4.6vw,52px);line-height:1.18;letter-spacing:-.03em;font-weight:800;margin-top:30px}
+.lead{font-size:17px;color:var(--sub);margin-top:14px;max-width:760px}
+.say{margin-top:40px;padding:30px 30px 28px;background:var(--soft);border-radius:4px}
+.say h2,.sec>h2{font-size:15px;font-weight:700;color:var(--sub);margin-bottom:14px}
+.say ol{list-style:none;counter-reset:s;display:grid;gap:12px}
+.say li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;font-size:18px;line-height:1.55;font-weight:500}
+.say li::before{content:counter(s);font-weight:800}
+.pick{margin-top:22px;padding-top:20px;border-top:1px solid var(--line);font-size:17px}
+.pick b{font-weight:800}
+.sec{padding:72px 0 0}
+.drafts{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{display:flex;flex-direction:column}
+.shot{position:relative;display:block;overflow:hidden;background:#111;aspect-ratio:16/10;border-radius:4px}
+.shot img.pc{width:100%;height:100%;object-fit:cover;object-position:top}
+.shot img.m{position:absolute;right:10px;bottom:10px;width:26%;border-radius:10px;border:3px solid #111;background:#111}
+.tag{display:inline-block;font-size:13px;font-weight:800;margin-top:16px;min-height:20px}
+.card h3{font-size:22px;font-weight:800;letter-spacing:-.02em;margin-top:6px}
+.card .one{font-size:16px;color:var(--sub);margin-top:6px}
+.card dl{margin-top:14px;display:grid;gap:8px;font-size:15px}
+.card dt{font-weight:700}
+.card dd{color:var(--sub)}
+.open{margin-top:18px;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid var(--ink);text-decoration:none;font-weight:700;font-size:16px;align-self:flex-start}
+.card.rec .open{background:var(--ink);color:#fff}
+.cmp-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.cmp-tabs button{font:inherit;font-size:15px;font-weight:700;min-height:44px;padding:0 18px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--sub);cursor:pointer}
+.cmp-tabs button[aria-pressed="true"]{border-color:var(--ink);color:#fff;background:var(--ink)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.cmp figure{display:grid;gap:10px}
+.cmp figcaption{font-size:15px;font-weight:700}
+.cmp figcaption span{font-weight:400;color:var(--sub)}
+.pair{display:grid;grid-template-columns:3fr 1fr;gap:10px;align-items:start}
+.pair img{border:1px solid var(--line);border-radius:4px;width:100%}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:14px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{font-size:13px;color:var(--sub);font-weight:700}
+tbody th{font-weight:700;white-space:nowrap}
+td{color:var(--sub)}
+td.new{color:var(--ink)}
+footer{padding:72px 0 56px;color:var(--sub);font-size:13px}
+footer p+p{margin-top:6px}
+@media (max-width:980px){.drafts{grid-template-columns:1fr 1fr}.drafts .card:last-child{grid-column:1/-1}}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  .drafts,.cmp{grid-template-columns:1fr}
+  .say{padding:22px 18px}
+  .say li{font-size:16px}
+  .sec{padding-top:52px}
+  tbody th{white-space:normal}
+  table,thead,tbody,tr,th,td{display:block}
+  thead{display:none}
+  tr{padding:14px 0;border-bottom:1px solid var(--line)}
+  th,td{border:0;padding:2px 0}
+  td::before{content:attr(data-k);display:inline-block;min-width:38px;font-weight:700;color:var(--ink)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><img src="assets/logo/logo-dark.png" alt="HIGH SOCIETY" width="130" height="34"><p>하이소사이어티 홈페이지 리뉴얼<br>메인 화면 시안 · 2026.10.31</p></div>
+    <h1>알게 하고, 좋아하게 하고, 믿게 만드는 —<br>메인 화면 세 가지 방향</h1>
+    <p class="lead">지금 홈페이지의 문장·서비스·고객사 18곳·실제 집행 사례를 그대로 옮겨 세 가지 방향으로 다시 세웠습니다. 폰에서 열어 직접 만져 보세요.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="say" aria-labelledby="say-h">
+    <h2 id="say-h">고객에게 먼저 할 말</h2>
+    <ol>
+      <li id="say1">지금 홈페이지는 첫 화면 문장과 서비스 소개 세 페이지가 전부 그림 속 글자라, 폰에서는 읽기 어렵고 검색엔진도 글자로 읽지 못합니다 — 세 안 모두 진짜 글자로 다시 세웠습니다.</li>
+      <li id="say2">첫 화면에는 하이소사이어티가 직접 쓴 문장을 세웠습니다 — '알게 하고 좋아하게 하고 믿게 만드는 예술', '성공을 이끄는 1%', '신뢰관계를 구축해 구매활동을 일으키는 마케팅'.</li>
+      <li id="say3">세 안 모두 손이 닿으면 반응하는 장면이 하나씩 있고(물결이 퍼지고, 해시태그가 흩어졌다 모이고, 망점이 걷히며 사진이 드러납니다), 폰에서는 화면 아래 앱바로 서비스·사례·문의·전화가 엄지 한 번에 닿습니다.</li>
+    </ol>
+    <p class="pick" id="pick"><b>권하는 안: 2안</b> — 회사가 스스로 내건 '성공을 이끄는 1%'를 이 회사가 실제로 쓰는 해시태그 수백 개로 그려, 다른 대행사에는 붙일 수 없는 첫 화면입니다. 더 차분한 고급스러움을 원하면 1안입니다.</p>
+  </section>
+
+  <section class="sec" aria-labelledby="d-h">
+    <h2 id="d-h">세 가지 방향</h2>
+    <div class="drafts">
+      <article class="card" id="c1">
+        <a class="shot" href="1/index.html"><img class="pc" src="board/t1_pc.jpg" alt="1안 PC 첫 화면" loading="lazy"><img class="m" src="board/t1_m.jpg" alt="1안 폰 첫 화면" loading="lazy"></a>
+        <span class="tag"></span>
+        <h3>1안 · 알게, 좋아하게, 믿게</h3>
+        <p class="one">검은 수면 위 흰 종이 한 장 — 누르면 물결이 화면 끝까지 번졌다가 잔잔해집니다.</p>
+        <dl>
+          <dt>결</dt><dd>국내 대형 디자인 에이전시 사이트처럼 큰 글자와 넓은 여백의 단정한 흑백</dd>
+          <dt>손이 닿으면</dt><dd>수면 파동 — 누른 자리에서 물결이 퍼지고 첫 화면 사진이 일렁였다 잔잔해집니다. 근거: "소비자들에게 빠르게 확산 시키는 마케팅"</dd>
+          <dt>잘 맞는 경우</dt><dd>기업·기관 광고주에게 믿을 만한 회사로 보여야 할 때</dd>
+        </dl>
+        <a class="open" href="1/index.html">1안 열기</a>
+      </article>
+      <article class="card rec" id="c2">
+        <a class="shot" href="2/index.html"><img class="pc" src="board/t2_pc.jpg" alt="2안 PC 첫 화면" loading="lazy"><img class="m" src="board/t2_m.jpg" alt="2안 폰 첫 화면" loading="lazy"></a>
+        <span class="tag">권하는 안</span>
+        <h3>2안 · 성공을 이끄는 1%</h3>
+        <p class="one">이 회사 해시태그 수백 개가 모여 '1%'가 되고, 휘저으면 흩어졌다 다시 모입니다. 내리면 '알게', '믿게'로 바뀝니다.</p>
+        <dl>
+          <dt>결</dt><dd>해외 어워드 사이트 같은 타이포그래피 주도 독창형</dd>
+          <dt>손이 닿으면</dt><dd>칼리그람(아폴리네르, 1918) — 이 회사 해시태그 수백 개가 '1%'를 이루고, 휘저으면 흩어졌다 다시 모입니다</dd>
+          <dt>잘 맞는 경우</dt><dd>젊은 브랜드·SNS 광고주에게 감각을 먼저 보여 줄 때</dd>
+        </dl>
+        <a class="open" href="2/index.html">2안 열기</a>
+      </article>
+      <article class="card" id="c3">
+        <a class="shot" href="3/index.html"><img class="pc" src="board/t3_pc.jpg" alt="3안 PC 첫 화면" loading="lazy"><img class="m" src="board/t3_m.jpg" alt="3안 폰 첫 화면" loading="lazy"></a>
+        <span class="tag"></span>
+        <h3>3안 · 신뢰를 쌓아 구매로</h3>
+        <p class="one">신문 망점으로 찍힌 첫 화면 — 손이 지나간 자리만 실제 사진이 드러납니다.</p>
+        <dl>
+          <dt>결</dt><dd>처음 온 광고주가 1분 안에 서비스 → 사례 → 문의까지 가는 실용형</dd>
+          <dt>손이 닿으면</dt><dd>점묘(쇠라, 1884)·신문 망점 — 손이 지나간 자리의 망점이 밀려나며 실제 사진이 드러납니다</dd>
+          <dt>잘 맞는 경우</dt><dd>문의 전환을 가장 앞에 둘 때</dd>
+        </dl>
+        <a class="open" href="3/index.html">3안 열기</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="n-h">
+    <h2 id="n-h">지금 홈페이지와 나란히</h2>
+    <div class="cmp-tabs" role="group" aria-label="비교할 시안">
+      <button type="button" data-k="1" aria-pressed="false">1안</button>
+      <button type="button" data-k="2" aria-pressed="true">2안</button>
+      <button type="button" data-k="3" aria-pressed="false">3안</button>
+    </div>
+    <div class="cmp">
+      <figure>
+        <figcaption>지금 <span>high-society.co.kr</span></figcaption>
+        <div class="pair"><img src="board/now_pc.jpg" alt="지금 홈페이지 PC 첫 화면" loading="lazy"><img src="board/now_m.jpg" alt="지금 홈페이지 폰 첫 화면" loading="lazy"></div>
+      </figure>
+      <figure>
+        <figcaption id="cmp-cap">2안</figcaption>
+        <div class="pair"><img id="cmp-pc" src="board/t2_pc.jpg" alt="시안 PC 첫 화면" loading="lazy"><img id="cmp-m" src="board/t2_m.jpg" alt="시안 폰 첫 화면" loading="lazy"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="t-h">
+    <h2 id="t-h">무엇이 달라지나</h2>
+    <table>
+      <thead><tr><th>구역</th><th>지금</th><th>시안 (세 안 공통)</th></tr></thead>
+      <tbody>
+        <tr><th>첫 화면</th><td data-k="지금 ">'DIGITAL MARKETING' 스톡 사진, 회사 문장은 그림 속 글자</td><td class="new" data-k="시안 ">이 회사만을 위해 새로 만든 한 장 + 회사가 직접 쓴 문장을 진짜 글자로</td></tr>
+        <tr><th>서비스</th><td data-k="지금 ">바이럴·SNS·언론 소개 세 페이지가 전부 그림</td><td class="new" data-k="시안 ">메인 한 페이지에 글자로 — 원문 설명·해시태그·광고 종류·진행 단계까지</td></tr>
+        <tr><th>비포·애프터</th><td data-k="지금 ">그림이라 폰에서 읽을 수 없음</td><td class="new" data-k="시안 ">원문 그대로 글자로 나란히</td></tr>
+        <tr><th>사례·고객사</th><td data-k="지금 ">서비스 페이지 그림 속, 로고는 별도 페이지</td><td class="new" data-k="시안 ">실제 집행 화면과 고객사 18곳을 메인에서 바로</td></tr>
+        <tr><th>문의</th><td data-k="지금 ">별도 페이지의 영문 폼(Name·Email·Phone·Message)</td><td class="new" data-k="시안 ">메인 맨 아래 한글 폼 + 관심 서비스 고르기 + 전화·메일 바로가기</td></tr>
+        <tr><th>폰</th><td data-k="지금 ">햄버거 메뉴뿐, 첫 화면 글자가 아주 작음</td><td class="new" data-k="시안 ">아래 앱바(홈·서비스·사례·문의·전화), 손가락 크기 버튼</td></tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>화면의 문장·서비스·고객사 로고·사례 그림은 지금 홈페이지(high-society.co.kr)에서 가져왔고, 지어낸 성과 숫자는 넣지 않았습니다. 첫 화면 사진은 시안을 위해 새로 만든 연출 이미지입니다.</p>
+    <p>시안이라 문의 폼은 어디에도 전송되지 않으며, 이 페이지는 검색에 노출되지 않습니다. 만든 곳: 어니스트패밀리</p>
+  </div>
+</footer>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.cmp-tabs button');
+  var pc=document.getElementById('cmp-pc'),m=document.getElementById('cmp-m'),cap=document.getElementById('cmp-cap');
+  tabs.forEach(function(b){b.addEventListener('click',function(){
+    var k=b.getAttribute('data-k');
+    tabs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+    pc.src='board/t'+k+'_pc.jpg';m.src='board/t'+k+'_m.jpg';cap.textContent=k+'안';
+  })});
+})();
+</script>
+</body>
+</html>
